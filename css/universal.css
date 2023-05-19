@@ -1,0 +1,122 @@
+
+/* ====== Universal Codes ====== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+    background-color:var(--background-first-color) ;
+    font-size: 62.5%;   
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif; 
+    background-color: var(--dark-background);
+}
+:root {
+    --header-link-color: white;
+    --dark-cta-color: white;
+    --dark-background: rgb(59, 59, 59);
+    --light-dark-background: grey;
+    --link-color:black;
+    --gallery-width:300px;
+}
+h2{
+    font-size: 20px;
+}
+
+body, header, main, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main, header, footer{
+    width: var(--page-max-width);
+    background-color: var(--light-dark-background);
+}
+
+
+/* ===== Universal css ===== */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row, .pills-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lazy-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Targets the text */
+.dark-cta, .dark-cta-group a > *{
+    color:var(--dark-cta-color);
+    background:var(--dark-background);
+}
+.cta, .cta-group a > *{
+    text-align: center;
+    padding:10px;
+    border-radius: 20px;
+}
+.clean-link, .clean-link-group a{
+    color:var(--link-color);
+    text-decoration: none; 
+}
+.pills-display h2{
+    margin: .5rem;
+}
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+/* ===== Header css ===== */
+
+header h2{
+    color: var(--header-link-color);
+    transition: background-color 0.3s ease-in-out;
+    white-space:nowrap;
+}
+
+#active-page{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: white;
+}
+/* ===== Media queries ===== */
+
+/* ===== Pc screen ==== */
+@media only screen and (min-width:1000px){
+    :root{
+        --page-max-width:1000px;
+        --intro-image-width: 170px;
+    }
+    header h2:hover{
+        background-color: var(--dark-background);
+    }
+}
+/* ===== Up tp PC ===== */
+@media only screen and (max-width:999px){
+    :root{
+        --page-max-width:90vw;
+        --intro-image-width: 120px;
+    }
+    main p, main h2{
+        font-size: 100%;
+    }
+    header h2{
+        margin:0;
+    }
+}
+/* ===== Mobile and Up ===== */
+@media only screen and (min-width:450px){
+    header h2{
+        background-color: var(--light-dark-background);
+    }
+}
+/* ===== Mobile Only ==== */
+@media only screen and (max-width:449px){
+    header h2{
+        font-size: 100%;
+    }
+}

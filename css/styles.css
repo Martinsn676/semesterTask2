@@ -1,0 +1,43 @@
+/* ===== Info pages ===== */
+.picture-text-page{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    margin: 2rem;
+}
+.picture-text-page > div{
+    display: flex;
+    flex-direction: row;
+    grid-gap:2rem;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin:2rem;
+}
+.picture-text-page img{
+    width:100%;
+    object-fit:cover;
+    max-height:300px;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width:950px){
+    .picture-text-page .reverse{
+        flex-direction: row-reverse;
+    }
+    .picture-text-page div div{
+        width:50%;    
+    }
+}
+@media only screen and  (max-width:949px){
+    .picture-text-page > div{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:850px){
+    .picture-text-page img{
+        max-height: 300px;
+    }
+}
