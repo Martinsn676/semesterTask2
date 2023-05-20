@@ -86,7 +86,6 @@ main, header, footer{
     border-radius: 20px;
 }
 .link-clean a{
-    color:var(--copy-color);
     text-decoration: none; 
 }
 /* ===== Header css ===== */
@@ -106,6 +105,10 @@ header h2{
 /* ===== Footer css ===== */
 footer section{
     margin-right: 2rem;
+    color:var(--header-link-color);
+}
+footer a{
+    color:var(--header-link-color);
 }
 /* ===== Animations ===== */
 .opacity-entry{
