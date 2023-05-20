@@ -9,15 +9,13 @@
     <link href="../css/universal.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-
     <header>
-        <nav id="header-links" class="flex-row hover-cta-group cta-group clean-link-group lazy-align">
+        <nav id="header-links" class="flex-row link-hover-cta link-cta link-clean-link lazy-align">
             <div class="flex-row">
-                <a href="../index.html"><h2>Home</h2></a>
+                <a href="../index.html" id="active-page"><h2>Home</h2></a>
                 <a href="../html/exhibitions.html"><h2>Exhibitions</h2></a>
-                <a href="../html/news.html" id="active-page"><h2>News</h2></a>
+                <a href="../html/news.html"><h2>News</h2></a>
             </div>
             <div class="flex-row">
                 <a href="../html/visit_us.html"><h2>Visit</h2></a>
@@ -26,10 +24,51 @@
             </div>
         </nav>
     </header>
-
-<main>
-
+<main id="top">
+    
+    <h1> Events and Exhibitions</h1>
+    <nav class="link-cta link-dark-cta link-clean pills-display">
+        <div id="up-button" class="link-cta link-dark-cta">
+            <a href="#top"><h2>up</h2></a>
+        </div>
+        <a href="#visiting-professor-nav"><h2>Visiting Professor</h2></a>
+        <a href="#night-museum-nav"><h2>Night in the Museum</h2></a>
+        <a href="#energetica-exhibition-nav"><h2>Energetica Exhibition</h2></a>
+    </nav>
+    <section class="div-list-boxes picture-text-page div-small-margin div-white-box div">    
+        <div class="div-50-pc no-wrap flex-row flex-swap lazy-align">
+            <div id="visiting-professor-nav">
+                <img src="../pictures/night.png">
+            </div>
+            <div>
+                <h2>Visiting Professor of Aeronautics</h2>
+                <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+                <h3>April 25th to June 20th</h3>
+            </div>
+        </div>
+        <div class="div-50-pc no-wrap flex-row flex-swap lazy-align reverse-row-pc">
+            <div id="night-museum-nav">
+                <img src="../pictures/cropped_night.png">
+            </div>
+            <div>
+                <h2> Night in the Museum</h2>
+                <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+                <h3>May 5th to June 5th</h3>
+            </div>
+        </div>
+        <div class="div-50-pc no-wrap flex-row flex-swap lazy-align">
+            <div id="energetica-exhibition-nav">
+                <img src="../pictures\machine.png">
+            </div>
+            <div>
+                
+                <h2>Energetica Exhibition on Loan</h2>
+                <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
+                <h3>Coming June 25th to July 26th</h3>
+            </div>
+        </div>
+            
+    </section>
 </main>
-
 </body>
-</html>
+    </html>

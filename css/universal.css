@@ -1,4 +1,3 @@
-
 /* ====== Universal Codes ====== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -9,32 +8,44 @@ html {
 body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif; 
-    background-color: var(--dark-background);
+    background-color: var(--light-dark-background);
 }
+ul {
+    list-style: none;
+    padding: 0;
+    
+  }
 :root {
+    /* Colors */
     --header-link-color: white;
-    --dark-cta-color: white;
+    --link-color: white;
+    --copy-color:black;
     --dark-background: rgb(59, 59, 59);
     --light-dark-background: grey;
-    --link-color:black;
+    /* Sizes needed for calc() */
     --gallery-width:300px;
+    --margin-box:20px;
+    --padding-box:10px;
+    --page-max-width:1000px;
+    --intro-image-width: 170px;
 }
-h2{
-    font-size: 20px;
-}
-
 body, header, main, footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/* ===== Universal css ===== */
+
+h1{
+    color: var(--header-link-color);
+    text-align: center;
 }
 main, header, footer{
     width: var(--page-max-width);
     background-color: var(--light-dark-background);
 }
 
-
-/* ===== Universal css ===== */
+/* ===== Universal css functions ===== */
 .flex-column{
     display: flex;
     flex-direction: column;
@@ -49,51 +60,78 @@ main, header, footer{
     align-items: center;
     justify-content: center;
 }
-/* Targets the text */
-.dark-cta, .dark-cta-group a > *{
-    color:var(--dark-cta-color);
+.lazy-align-top{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.pills-display a > *{
+    margin: .5rem;
+    flex-wrap: wrap;
+    white-space:nowrap;
+}
+.pills-display{
+    align-items: first baseline;
+}
+.no-wrap{
+    flex-wrap:nowrap;
+}
+/* Buttons and links */
+.dark-cta, .link-dark-cta a > *{
+    color:var(--link-color);
     background:var(--dark-background);
 }
-.cta, .cta-group a > *{
+.cta, .link-cta a > *{
     text-align: center;
     padding:10px;
     border-radius: 20px;
 }
-.clean-link, .clean-link-group a{
-    color:var(--link-color);
+.link-clean a{
     text-decoration: none; 
 }
-.pills-display h2{
-    margin: .5rem;
-}
-.no-wrap{
-    flex-wrap: nowrap;
-}
-
 /* ===== Header css ===== */
-
 header h2{
     color: var(--header-link-color);
     transition: background-color 0.3s ease-in-out;
     white-space:nowrap;
 }
-
+header h2{
+    background-color: var(--light-dark-background);
+}
 #active-page{
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    color: white;
+    color: var(--header-link-color);
 }
-/* ===== Media queries ===== */
-
+/* ===== Footer css ===== */
+footer section{
+    margin-right: 2rem;
+}
+/* ===== Animations ===== */
+.opacity-entry{
+    opacity: 0;
+    animation: opacityEntry 1500ms ease-in-out forwards;
+}
+@keyframes opacityEntry {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /* ===== Pc screen ==== */
 @media only screen and (min-width:1000px){
-    :root{
-        --page-max-width:1000px;
-        --intro-image-width: 170px;
-    }
     header h2:hover{
         background-color: var(--dark-background);
     }
+    .div-50-pc > div{
+        width:calc(50% - ((var(--margin-box) + var(--padding-box))*2));
+        padding: var(--padding-box);
+    }
+    .picture-text-page .reverse-row-pc{
+        flex-direction: row-reverse;
+    }   
 }
 /* ===== Up tp PC ===== */
 @media only screen and (max-width:999px){
@@ -101,22 +139,26 @@ header h2{
         --page-max-width:90vw;
         --intro-image-width: 120px;
     }
-    main p, main h2{
-        font-size: 100%;
-    }
     header h2{
         margin:0;
     }
+    header h2:active{
+        background-color: var(--dark-background);
+    }
+    .flex-row.flex-swap{
+        flex-direction: column;
+    }
+    .flex-column.flex-swap{
+        flex-direction: row;
+    }
+    
 }
 /* ===== Mobile and Up ===== */
 @media only screen and (min-width:450px){
-    header h2{
-        background-color: var(--light-dark-background);
-    }
 }
 /* ===== Mobile Only ==== */
 @media only screen and (max-width:449px){
     header h2{
-        font-size: 100%;
+        font-size:17px;
     }
 }

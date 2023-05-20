@@ -1,43 +1,83 @@
 /* ===== Info pages ===== */
-.picture-text-page{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    margin: 2rem;
-}
-.picture-text-page > div{
-    display: flex;
-    flex-direction: row;
-    grid-gap:2rem;
-    justify-content:center;
-    align-items: center;
+.div-white-box > div,.white-box{
     background-color: white;
-    padding: 20px;
     border-radius: 20px;
-    margin:2rem;
+    color:var(--copy-color);
+    margin:20px;
+    padding:10px
 }
-.picture-text-page img{
+.div-white-box img{
     width:100%;
     object-fit:cover;
     max-height:300px;
     border-radius: 20px;
 }
+iFrame{
+    width: 95%;
+    height:350px; 
+    border:0;   
+}
+/* ===== Index page ===== */
+.visual-intro-element{
+    width:var(--intro-image-width);
+}
+.visual-intro-element {
+    display: block;
+    background-color: white;
+    margin: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.visual-intro-element img{
+    height: calc(var(--intro-image-width) * .88);
+    max-width: var(--intro-image-width);
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.visual-intro-element h2{
+    height:calc(var(--intro-image-width) * .35);
+    font-size: calc(var(--intro-image-width) * .13);  
+    border-radius: 5px 5px 0 0;
+}
+.visual-intro-element p{
+    display: none;
+}
+#image-gallery img{
+    height:calc(var(--gallery-width) * .67);
+    width:var(--gallery-width);
+    object-fit: cover; 
+    padding:5px;
+    background-color: var(--dark-background);
+}
+#image-gallery{
+    margin-top: 2rem;
+}
+.dates{
+    display: flex;
+    flex-direction: row;
+    max-width: 30rem;
+    flex-wrap: wrap;
+    margin-top:2rem;}
+.dates a{
+    text-align: center;
+    height:2rem;
+    width: 2rem;
+    padding:5px;
+    margin:5px;
+    color: black;
+    text-decoration: none;
+    background-color: bisque;}
+#unavailable-date{
+    background-color: white;
+    display: inline-block;
+    pointer-events: none;}
 
-@media only screen and (min-width:950px){
-    .picture-text-page .reverse{
-        flex-direction: row-reverse;
-    }
-    .picture-text-page div div{
-        width:50%;    
-    }
+#up-button {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
-@media only screen and  (max-width:949px){
-    .picture-text-page > div{
-        flex-direction: column;
-    }
-}
-@media only screen and (min-width:850px){
-    .picture-text-page img{
-        max-height: 300px;
-    }
+/* not working */
+body:not(:target) #up-button {
+    display: block;
 }
