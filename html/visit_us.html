@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An overview over our exhibitions">
-    <title>California Science Center - Exhibitions</title>
+    <meta name="description" content="Information about how to visit us and other relevant details">
+    <title>California Science Center - Visit us</title>
     <link href="../css/universal.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav id="header-links" class="flex-row link-hover-cta link-cta link-clean-link lazy-align">
-            <div class="flex-row">
-                <a href="../index.html" id="active-page"><h2>Home</h2></a>
+        <nav id="header-links" class="flex-row link-hover-cta link-cta link-clean lazy-align">
+            <div class="flex-row no-wrap">
+                <a href="../index.html"><h2>Home</h2></a>
                 <a href="../html/exhibitions.html"><h2>Exhibitions</h2></a>
                 <a href="../html/news.html"><h2>News</h2></a>
             </div>
-            <div class="flex-row">
-                <a href="../html/visit_us.html"><h2>Visit</h2></a>
+            <div class="flex-row no-wrap">
+                <a href="../html/visit_us.html" id="active-page"><h2>Visit</h2></a>
                 <a href="../html/get_involved.html"><h2>Get involved</h2></a>
                 <a href="../html/contact_us.html" ><h2>Contact</h2></a>
             </div>
@@ -27,19 +27,29 @@
     </header>
 <main>
     <h1>Visit us</h1>
-    <section class="flex-row flex-swap lazy-align div-50-pc">
+    <nav class="link-cta link-dark-cta link-clean pills-display">
+        <div id="up-button" class="link-cta link-dark-cta">
+            <a href="#header-links"><h2>up</h2></a>
+        </div>
+        <a href="#opening-hours-nav"><h2>Opening Hours</h2></a>
+        <a href="#admission-nav"><h2>Admission</h2></a>
+        <a href="#accessibility-nav"><h2>Accessibility</h2></a>
+        <a href="#food-and-drink-nav"><h2>Food and drink</h2></a>
+        <a href="#store-nav"><h2>Store</h2></a>
+    </nav>
+    <section class="flex-row flex-swap lazy-align div-50-pc white-box">
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3307.0849014851724!2d-118.288323584786!3d34.01603158061583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c8084e875cdb%3A0x1e38dfc7ae1bb572!2sCalifornia%20Science%20Center!5e0!3m2!1sno!2sno!4v1684218133850!5m2!1sno!2sno"></iframe>    
             <a href="https://goo.gl/maps/KEmRNvdRb46eiEz2A" class="blue-link">Open in Google Maps</a>
         </div>
-        <div class="flex-column div-white-box flex-swap">
+        <div class="flex-column flex-swap">
             <div>
                 <h2>Location</h2>
                 <p> Museum is located at 700 Exposition Park Dr, Los Angeles.</p>
                 
             </div>
-            <div>
-                <h2>Hours</h2>
+            <div id="opening-hours-nav">
+                <h2>Opening Hours</h2>
                 <ul>
                     <li>Monday: Closed</li>
                     <li>Tuesday: 10:00 – 16:00</li>
@@ -53,20 +63,20 @@
         </div>
     </section>
     <section class="div-white-box div-50-pc flex-row flex-swap">
-        <div>
+        <div id="admission-nav">
             <h2>Admission</h2>
             <p>The entrance is free for all.There are guided tours of the museum that leave every hour. These tours are 7$ per person and include a handy printed guide of the museum. If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p> 
         </div>
-        <div>
+        <div id="accessibility-nav">
             <h2>Accessibility</h2>
             <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p> 
         </div>
-        <div>
+        <div id="food-and-drink-nav">
             <h2>Food and drink</h2>
             <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
         </div>
-        <div>
-            <h2>Shop</h2>
+        <div id="store-nav">
+            <h2>Store</h2>
             <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
         </div>
     </section>

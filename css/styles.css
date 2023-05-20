@@ -15,7 +15,8 @@
 iFrame{
     width: 95%;
     height:350px; 
-    border:0;   
+    border:0;
+    border-radius: 20px;;   
 }
 /* ===== Index page ===== */
 .visual-intro-element{
@@ -72,12 +73,7 @@ iFrame{
     pointer-events: none;}
 
 #up-button {
-    display: none;
     position: fixed;
     right: 10px;
     bottom: 10px;
-}
-/* not working */
-body:not(:target) #up-button {
-    display: block;
 }
