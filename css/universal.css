@@ -20,7 +20,7 @@ ul {
     --cta-color: white;
     --copy-color:black;
     --dark-background: rgb(59, 59, 59);
-    --light-dark-background: rgb(104, 104, 104);
+    --light-dark-background: rgb(80, 80, 80);
     --secondary-background: rgb(44, 44, 44);
     --secondary-color: white;
     /* Standard sizes */
@@ -44,7 +44,6 @@ main h1, .header-white{
 }
 main, header, footer{
     width: var(--page-max-width);
-    background-color: var(--light-dark-background);
 }
 a {
     text-decoration: none; 
@@ -138,6 +137,9 @@ header a{
     text-decoration-thickness: 3px;
     color: var(--header-link-color);
 }
+#csm-logo{
+    height:50px;
+}
 
 
 /* ===== Footer css ===== */
@@ -221,6 +223,6 @@ footer, footer a{
 /* ===== Mobile Only ==== */
 @media only screen and (max-width:549px){
     header .link-cta a{
-        font-size:17px;
+        font-size:20px;
     }
 }
