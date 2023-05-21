@@ -31,7 +31,6 @@ ul {
     --gallery-width:300px;
     --page-max-width:1000px;
     --intro-image-width: 170px;
-
 }
 body, header, main, footer{
     display: flex;
@@ -40,13 +39,15 @@ body, header, main, footer{
 }
 
 /* ===== Universal css ===== */
-h1{
+main h1, .header-white{
     color: var(--header-link-color);
-    text-align: center;
 }
 main, header, footer{
     width: var(--page-max-width);
     background-color: var(--light-dark-background);
+}
+a {
+    text-decoration: none; 
 }
 
 /* ===== Boxes ===== */
@@ -67,7 +68,7 @@ main, header, footer{
     object-fit:cover;
     max-height:300px;
 }
-.div-round-border > div, .round-border,
+.div-round-corner > div, .round-corner,
 .div-box-padding > div, .box-padding,
 .div-box-padding img,
 .cta, .link-cta a
@@ -117,9 +118,10 @@ main, header, footer{
 .link-cta a{
     font-size: 2rem;
 }
-.link-clean a {
-    text-decoration: none; 
+.cta-block{
+    display: block;
 }
+
 
 
 /* ===== Header css ===== */
@@ -161,19 +163,27 @@ footer, footer a{
     }
 }
 
+#up-button {
+        position: fixed;
+        right: 50px;
+        bottom: 40px;
+    }
 
 /* ===== Pc screen ==== */
 @media only screen and (min-width:1000px){
-    header a:hover{
-        background-color: var(--dark-background);
-    }
     .div-50-pc > div{
         width:calc(50% - ((var(--margin-box) + var(--padding-box))*2));
         padding:var(--padding-box);
     }
     .picture-text-page .reverse-row-pc{
         flex-direction: row-reverse;
-    }   
+    }
+    header .link-cta a{
+        font-size:32px;
+    }
+    #up-button {
+        right:calc(50vw - (var(--page-max-width) * 0.55));
+    }
 }
 
 
@@ -193,11 +203,19 @@ footer, footer a{
     .flex-column.flex-swap{
         flex-direction: row;
     }
+    header .link-cta a{
+        font-size:25px;
+    }
+    #up-button {
+        position: fixed;
+        right: 50px;
+        bottom: 40px;
+    }
 }
 /* ===== Mobile and Up ===== */
 @media only screen and (min-width:550px){
-    header .link-cta a{
-        font-size:30px;
+    header a:hover{
+        background-color: var(--dark-background);
     }
 }
 /* ===== Mobile Only ==== */

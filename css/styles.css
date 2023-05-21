@@ -33,7 +33,6 @@ iFrame{
     width:var(--gallery-width);
     object-fit: cover; 
     padding:5px;
-    background-color: white;
 }
 .dates{
     display: flex;
@@ -59,8 +58,4 @@ iFrame{
 #contact-us-forms > div{
     max-width: 300px;
 }
-#up-button {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-}
+
