@@ -20,7 +20,7 @@ ul {
     --cta-color: white;
     --copy-color:black;
     --dark-background: rgb(59, 59, 59);
-    --light-dark-background: grey;
+    --light-dark-background: rgb(175, 175, 175);
     /* Sizes needed for calc() */
     --gallery-width:300px;
     --margin-box:20px;

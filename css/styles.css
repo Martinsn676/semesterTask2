@@ -13,10 +13,11 @@
     border-radius: 20px;
 }
 iFrame{
-    width: 95%;
+    width: 100%;
     height:350px; 
     border:0;
-    border-radius: 20px;;   
+    border-radius: 20px;
+    
 }
 /* ===== Index page ===== */
 .visual-intro-element{
@@ -47,10 +48,11 @@ iFrame{
     width:var(--gallery-width);
     object-fit: cover; 
     padding:5px;
-    background-color: var(--dark-background);
+    background-color: white;
 }
 #image-gallery{
     margin-top: 2rem;
+    
 }
 .dates{
     display: flex;
