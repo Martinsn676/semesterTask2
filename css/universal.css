@@ -21,7 +21,7 @@ ul {
     --copy-color:black;
     --dark-background: rgb(59, 59, 59);
     --light-dark-background: rgb(104, 104, 104);
-    --secondary-background: blue;
+    --secondary-background: rgb(44, 44, 44);
     --secondary-color: white;
     /* Standard sizes */
     --margin-box:20px;
@@ -38,6 +38,7 @@ body, header, main, footer{
     flex-direction: column;
     align-items: center;
 }
+
 /* ===== Universal css ===== */
 h1{
     color: var(--header-link-color);
@@ -47,6 +48,7 @@ main, header, footer{
     width: var(--page-max-width);
     background-color: var(--light-dark-background);
 }
+
 /* ===== Boxes ===== */
 .div-secondary-colors-box > div, .secondary-colors-box{
     background-color: var(--secondary-background);
@@ -68,10 +70,12 @@ main, header, footer{
 .div-round-border > div, .round-border,
 .div-box-padding > div, .box-padding,
 .div-box-padding img,
-.cta, .link-cta a > *
+.cta, .link-cta a
 {
     border-radius: var(--border-radius);
 }
+
+
 /* ===== Universal flex functions ===== */
 .flex-column{
     display: flex;
@@ -92,7 +96,7 @@ main, header, footer{
     justify-content: baseline;
     align-items: baseline;
 }
-.pills-display a > *{
+.pills-display a {
     margin: .5rem;
     flex-wrap: wrap;
     white-space:nowrap;
@@ -100,25 +104,31 @@ main, header, footer{
 .no-wrap{
     flex-wrap:nowrap;
 }
+
 /* Buttons and links */
-.dark-cta, .link-dark-cta a > *{
+.dark-cta, .link-dark-cta a {
     color:var(--cta-color);
     background:var(--dark-background);
 }
-.cta, .link-cta a > *{
+.cta, .link-cta a {
     text-align: center;
     padding:10px;
 }
-.link-clean a{
+.link-cta a{
+    font-size: 2rem;
+}
+.link-clean a {
     text-decoration: none; 
 }
+
+
 /* ===== Header css ===== */
-header h2{
+header a{
     color: var(--header-link-color);
     transition: background-color 0.3s ease-in-out;
     white-space:nowrap;
 }
-header h2{
+.hover-cta a{
     background-color: var(--light-dark-background);
 }
 #active-page{
@@ -126,6 +136,8 @@ header h2{
     text-decoration-thickness: 3px;
     color: var(--header-link-color);
 }
+
+
 /* ===== Footer css ===== */
 footer section{
     margin-right: 2rem;
@@ -133,6 +145,8 @@ footer section{
 footer, footer a{
     color:var(--header-link-color);
 }
+
+
 /* ===== Animations ===== */
 .opacity-entry{
     opacity: 0;
@@ -146,29 +160,31 @@ footer, footer a{
         opacity: 1;
     }
 }
+
+
 /* ===== Pc screen ==== */
 @media only screen and (min-width:1000px){
-    header h2:hover{
+    header a:hover{
         background-color: var(--dark-background);
     }
     .div-50-pc > div{
         width:calc(50% - ((var(--margin-box) + var(--padding-box))*2));
-        padding: var(--padding-box);
+        padding:var(--padding-box);
     }
     .picture-text-page .reverse-row-pc{
         flex-direction: row-reverse;
     }   
 }
+
+
 /* ===== Up tp PC ===== */
 @media only screen and (max-width:999px){
     :root{
         --page-max-width:90vw;
         --intro-image-width: 120px;
     }
-    header h2{
-        margin:0;
-    }
-    header h2:active{
+    
+    header a:active{
         background-color: var(--dark-background);
     }
     .flex-row.flex-swap{
@@ -177,14 +193,16 @@ footer, footer a{
     .flex-column.flex-swap{
         flex-direction: row;
     }
-    
 }
 /* ===== Mobile and Up ===== */
-@media only screen and (min-width:450px){
+@media only screen and (min-width:550px){
+    header .link-cta a{
+        font-size:30px;
+    }
 }
 /* ===== Mobile Only ==== */
-@media only screen and (max-width:449px){
-    header h2{
+@media only screen and (max-width:549px){
+    header .link-cta a{
         font-size:17px;
     }
 }
