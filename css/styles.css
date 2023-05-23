@@ -26,6 +26,7 @@ iFrame{
     border-radius: 5px 5px 0 0;
 }
 .visual-intro-element p{
+/* just in case, I know that I should remove it instead */
     display: none;
 }
 #image-gallery img{
@@ -55,7 +56,9 @@ iFrame{
     display: inline-block;
     pointer-events: none;
 }
-#contact-us-forms > div{
+#contact-us-forms div{
     max-width: 300px;
 }
-
+input, #messageForm{
+    max-width:80%;
+}

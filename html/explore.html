@@ -11,20 +11,26 @@
 </head>
 <body>
     <header>
-        <nav id="header-links" class="flex-row link-hover-cta link-cta link-clean lazy-align">
-            <div class="flex-row no-wrap">
-                <a href="../index.html" id="active-page">Home</a>
-                <a href="../html/exhibitions.html">Exhibitions</a>
-                <a href="../html/explore.html">Explore</a>
+        <div id="header-links" class="flex-row flex-swap no-wrap">
+            <div class="flex-column no-wrap lazy-align-left">
+                <a href="../index.html"><img src="../pictures/Intersection 1.png" id="csm-logo"></a>
+                <a href="../index.html"><img src="../pictures/Intersection 2.png" id="csm-slogan"></a>
             </div>
-            <div class="flex-row no-wrap">
-                <a href="../html/news.html">News</a>
-                <a href="../html/visit_us.html">Visit</a>
-                <a href="../html/contact_us.html" >Contact</a>
-            </div>
-        </nav>
+            <nav class="flex-row link-hover-cta link-cta link-clean lazy-align">
+                <div class="flex-row no-wrap">
+                    <a href="../index.html" id="active-page">Home</a>
+                    <a href="../html/exhibitions.html">Exhibitions</a>
+                    <a href="../html/explore.html">Explore</a>
+                </div>
+                <div class="flex-row no-wrap">
+                    <a href="../html/news.html">News</a>
+                    <a href="../html/visit_us.html">Visit</a>
+                    <a href="../html/contact_us.html" >Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
-<main>
+<main class="opacity-entry">
 <h1>Explore</h1>
 <nav class="link-cta link-dark-cta link-clean pills-display">
         <div id="up-button" class="link-cta link-dark-cta">
@@ -35,35 +41,77 @@
         <a href="#for-teachers-nav">Teacher?</a>
         <a href="#researchers-nav">Researcher?</a>
     </nav>
-<section class="div-white-box div-box-padding">
-    <div>
-        <h2 id=for-kids-nav>For you between 7 and 16</h2>
-        <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
-        <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore..</p>
-        <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts..</p>
-        <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
+<section>
+    <div id=for-kids-nav class=" flex-column lazy-align white-box box-padding">
+        <div class="div-50-pc flex-row flex-swap lazy-align  reverse-row-pc">
+            <div>
+                <h2>For you between 7 and 16</h2>
+                <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
+                <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore..</p>
+            </div>
+            <div>
+                <img src="../new_files/Visitor-and-Explainer-engaging-bubbles-demo-within-Wonderlab-The-Equinor-Gallery.jpg">
+            </div>
+        </div>
+        <div class="div-50-pc flex-row flex-swap lazy-align">
+            <div>    
+                <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts..</p>
+                <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
+            </div>
+            <div>
+                <img src="../new_files/A-family-on-the-friction-slides-within-Wonderlab-The-Equinor-Gallery-.jpg">
+            </div>
+        </div>   
     </div>
-    <div>
-        <h2 id="for-young-families-nav">For young families</h2>
-        <p>Welcome to our science museum! We understand the importance of fostering a love for science in young minds, and we're thrilled to offer a range of engaging activities for your young family.</p>
-        <p>One of the highlights of our museum is the Young Explorers Club, a special program designed to ignite your child's curiosity and nurture their passion for scientific exploration. As a member of the club, your child will have access to exclusive events and hands-on activities guided by our team of expert educators. They'll have the opportunity to conduct exciting experiments, engage in interactive demonstrations, and participate in captivating workshops tailored to their age group.</p>
-        <p>The Young Explorers Club meets regularly throughout the year, providing a consistent and enriching experience for your child. Our dedicated staff members are committed to creating a safe and supportive environment where young scientists can thrive. By joining the club, your child will not only develop a deeper understanding of scientific concepts but also enhance their critical thinking, problem-solving, and teamwork skills.</p>
-        <p>In addition to the club, our museum offers a wide range of exhibits that cater specifically to young learners. From interactive displays and immersive simulations to captivating shows and live demonstrations, we strive to make science accessible and exciting for children of all ages. Our exhibits are designed to inspire wonder, encourage exploration, and ignite a lifelong passion for learning.</p>
-        <p>We also organize special events and workshops for parents, providing you with resources and insights to support your child's scientific development. Our knowledgeable staff members are always available to answer your questions, offer guidance, and share educational tips that you can incorporate into your family's everyday life.</p>
-        <p>By visiting our museum and becoming part of the Young Explorers Club, you're investing in your child's future and setting them on a path of discovery and innovation. We can't wait to embark on this scientific journey together with your young family!</p>
+    <div id="for-young-families-nav" class=" flex-column lazy-align white-box box-padding">
+        <div class="div-50-pc flex-row flex-swap lazy-align  reverse-row-pc">
+            <div>
+                <h2>For Parents of Young Families</h2>
+                <p>Are you looking for an enriching experience for your young ones? Visit our science museum and explore the exciting world of science together as a family.</p>
+                <p>Join our Young Stars club, a weekly Saturday program from 10:00 to 13:00. Your child will have the opportunity to explore and experiment under the guidance of our expert team, fostering their passion for scientific discovery.</p>
+            </div>
+            <div>
+                <img src="../new_files/A-family-engaging-with-light-box-exhibit-within-Wonderlab-The-Equinor-Gallery.jpg">
+            </div>
+        </div>
+        <div class="div-50-pc flex-row flex-swap lazy-align">
+            <div>
+                <p>During school holidays, we offer special holiday clubs where children can embark on a captivating journey of exploration. Each holiday, we choose an exciting theme to delve into. Send us a message to learn more about the holiday club and how your child can participate.</p>
+                <p>Visit our website or contact us for more information and to plan your family's science adventure at our museum.</p>
+                <p>Remember, science is fun for the whole family!</p>
+            </div>
+            <div>
+                <img src="../pictures/exhibition-1863344_1920.png">
+            </div>
+        </div>
     </div>
-    <div>
-        <h2 id="for-teachers-nav">For teachers</h2>
+<div class="div-50-pc flex-row div-white-box div-box-padding">
+    <div id="for-teachers-nav">
+        <h2>For teachers</h2>
         <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
         <p>Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
     </div>
-    <div>
-        <h2 id="researchers-nav">For the researchers</h2>
+    <div id="researchers-nav">
+        <h2>For researchers</h2>
         <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
     </div>
-</section>
+</div></section>
 </main>
-<footer>
+<footer class="flex-row lazy-align-top">
+    <section class="flex-column link-clean">
+        <h2>Get in contact</h2>
+        <a href="../html/contact_us.html#contact-us-forms">Send a message</a>
+        <a href="../html/contact_us.html#class-trip-nav">Sign up your class</a>
+        <a href="../html/visit_us.html">Visit us</a>
+        <a href="../html/get_involved.html">Get involved</a>
+    </section>
+    <section class="flex-column">
+        <h2>Opening hours</h2>    
+            <div>Monday: Closed</div>
+            <div>Tuesday. Wednesday and Friday: 10:00–16:00</div>
+            <div>Thursday and Saturday: 10:00–16:00</div>
+            <div>Sunday: 9:00–13:00</div> 
+    </section>
 </footer>
 </body>
 </html>

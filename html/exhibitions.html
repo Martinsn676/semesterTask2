@@ -9,33 +9,38 @@
     <link href="../css/universal.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <nav id="header-links" class="flex-row link-hover-cta link-cta link-clean lazy-align">
-            <div class="flex-row no-wrap">
-                <a href="../index.html" id="active-page">Home</a>
-                <a href="../html/exhibitions.html">Exhibitions</a>
-                <a href="../html/explore.html">Explore</a>
+        <div id="header-links" class="flex-row flex-swap no-wrap">
+            <div class="flex-column no-wrap lazy-align-left">
+                <a href="../index.html"><img src="../pictures/Intersection 1.png" id="csm-logo"></a>
+                <a href="../index.html"><img src="../pictures/Intersection 2.png" id="csm-slogan"></a>
             </div>
-            <div class="flex-row no-wrap">
-                <a href="../html/news.html">News</a>
-                <a href="../html/visit_us.html">Visit</a>
-                <a href="../html/contact_us.html" >Contact</a>
-            </div>
-        </nav>
+            <nav class="flex-row link-hover-cta link-cta link-clean lazy-align">
+                <div class="flex-row no-wrap">
+                    <a href="../index.html" id="active-page">Home</a>
+                    <a href="../html/exhibitions.html">Exhibitions</a>
+                    <a href="../html/explore.html">Explore</a>
+                </div>
+                <div class="flex-row no-wrap">
+                    <a href="../html/news.html">News</a>
+                    <a href="../html/visit_us.html">Visit</a>
+                    <a href="../html/contact_us.html" >Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
-<main>
+<main class="opacity-entry">
     <h1>Exhibitions</h1>
     <nav class="link-cta link-dark-cta link-clean pills-display">
-        <div id="up-button" class="link-cta link-dark-cta">
-            <a href="#header-links">Go up</a>
-        </div>
         <a href="#cosmology-nav">Cosmology</a>
         <a href="#evolution-nav">Evolution</a>
         <a href="#biology-and-medicine-nav">Biology and Medicine</a>
         <a href="#robotics-and-ai-nav">Robotics and AI</a>
         <a href="#ecology-nav">Ecology</a>
+    </nav>
+    <nav id="up-button" class="link-cta link-dark-cta">
+            <a href="#header-links">Go up</a>
     </nav>
     <section class="picture-text-page div-white-box div-box-padding"> 
         <div id="cosmology-nav" class="div-50-pc flex-row flex-swap lazy-align">
@@ -65,7 +70,7 @@
             <div>
                 <h2>Biology and Medicine</h2>
                 <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p> 
-                <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+                <!-- <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>-->
             </div>
         </div>
         <div id="robotics-and-ai-nav" class="div-50-pc flex-row flex-swap lazy-align reverse-row-pc">
@@ -92,9 +97,10 @@
 <footer class="flex-row lazy-align-top">
     <section class="flex-column link-clean">
         <h2>Get in contact</h2>
-        <a href="../html/contact_us.html">Send a message</a>
+        <a href="../html/contact_us.html#contact-us-forms">Send a message</a>
         <a href="../html/contact_us.html#class-trip-nav">Sign up your class</a>
         <a href="../html/visit_us.html">Visit us</a>
+        <a href="../html/get_involved.html">Get involved</a>
     </section>
     <section class="flex-column">
         <h2>Opening hours</h2>    

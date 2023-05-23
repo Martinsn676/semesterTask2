@@ -10,20 +10,26 @@
     <link href="../css/styles.css" rel="stylesheet">
 <body>
     <header>
-        <nav id="header-links" class="flex-row link-hover-cta link-cta link-clean lazy-align">
-            <div class="flex-row no-wrap">
-                <a href="../index.html" id="active-page">Home</a>
-                <a href="../html/exhibitions.html">Exhibitions</a>
-                <a href="../html/explore.html">Explore</a>
+        <div id="header-links" class="flex-row flex-swap no-wrap">
+            <div class="flex-column no-wrap lazy-align-left">
+                <a href="../index.html"><img src="../pictures/Intersection 1.png" id="csm-logo"></a>
+                <a href="../index.html"><img src="../pictures/Intersection 2.png" id="csm-slogan"></a>
             </div>
-            <div class="flex-row no-wrap">
-                <a href="../html/news.html">News</a>
-                <a href="../html/visit_us.html">Visit</a>
-                <a href="../html/contact_us.html" >Contact</a>
-            </div>
-        </nav>
+            <nav class="flex-row link-hover-cta link-cta link-clean lazy-align">
+                <div class="flex-row no-wrap">
+                    <a href="../index.html" id="active-page">Home</a>
+                    <a href="../html/exhibitions.html">Exhibitions</a>
+                    <a href="../html/explore.html">Explore</a>
+                </div>
+                <div class="flex-row no-wrap">
+                    <a href="../html/news.html">News</a>
+                    <a href="../html/visit_us.html">Visit</a>
+                    <a href="../html/contact_us.html" >Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
-<main>
+<main class="opacity-entry">
     <nav class="link-cta link-dark-cta link-clean pills-display">
         <a href="#cosmology-nav">Cosmology</a>
         <a href="#evolution-nav">Evolution</a>
@@ -38,33 +44,32 @@
     <section id="contact-us-forms" class="div-50-pc flex-row flex-swap lazy-align-top div-white-box div-box-padding">   
         <div>
             <div>
-            <h2>Send us a message</h2>
-            <p>We are here to help you all weekdays from 9:00 - 15:00</p>
+                <h2>Send us a message</h2>
+                <p>We are here to help you all weekdays from 9:00 - 15:00</p>
+                <p>The best way to reach us is through this contact form</p>
             </div>
-            <div class="flex-column">
-            <p>The best way to reach us is through this contact form</p>
-            <label for="nameField">Name:</label>
-            <input type="text" id="nameField" name="nameField">
-            <label for="emailField">E-mail:</label>
-            <input type="text" id="emailField" name="emailField">
-            <label for="message">What can we help you with?</label>
-            <input type="text" id="message" name="message"></input>
+            <div class="flex-column lazy-align-left">
+                <label for="nameField">Name:</label>
+                <input type="text" id="nameField" name="nameField">
+                <label for="emailField">E-mail:</label>
+                <input type="text" id="emailField" name="emailField">
+                <label for="messageForm">Message:</label>
+                <textarea id="messageForm" name="messageForm" rows="4" cols="50"></textarea>
             </div>
-            <div class="link-cta link-dark-cta ">
-                <a href="#">Send</a>       
-            </div>
+            <a href="#" class="cta-block cta dark-cta">Send</a> 
         </div>
         <div id="class-trip-nav">
             <div>
                 <h2>Arrange class trip</h2>
                 <p>Use this form to register your class on an available date</p>
             </div>
-            <div class="flex-column">
+            <div class="flex-column lazy-align-left">
                 <label for="nameField2">Name of school:</label>
                 <input type="text" id="nameField2" name="nameField2">
                 <label for="emailField2">E-mail:</label>
                 <input type="text" id="emailField2" name="emailField2">
-
+            </div>
+            <div>
                 <section class="dates">
                     <!-- will be made with Java-->
                     <a href="#" id="unavailable-date">1</a>
@@ -100,16 +105,17 @@
                     <a href="#">31</a>
                 </section>
             </div>
-            <a href="#" class="cta dark-cta ">Send</a> 
+            <a href="#" class="cta-block cta dark-cta">Send</a> 
         </div>
    </section>
 </main>
 <footer class="flex-row lazy-align-top">
     <section class="flex-column link-clean">
         <h2>Get in contact</h2>
-        <a href="../html/contact_us.html">Send a message</a>
+        <a href="../html/contact_us.html#contact-us-forms">Send a message</a>
         <a href="../html/contact_us.html#class-trip-nav">Sign up your class</a>
         <a href="../html/visit_us.html">Visit us</a>
+        <a href="../html/get_involved.html">Get involved</a>
     </section>
     <section class="flex-column">
         <h2>Opening hours</h2>    
