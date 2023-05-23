@@ -51,7 +51,7 @@ iFrame{
     text-decoration: none;
     background-color: bisque;
 }
-#unavailable-date{
+.dates .unavailable-date{
     background-color: white;
     display: inline-block;
     pointer-events: none;
