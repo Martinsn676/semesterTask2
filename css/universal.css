@@ -145,7 +145,7 @@ a {
     color: var(--header-link-color);
 }
 #csm-logo{
-    height:75px;
+    height:70px;
     margin: 20px 50px 3px 0;
 }
 #csm-slogan{
@@ -160,6 +160,9 @@ footer section{
 }
 footer, footer a{
     color:var(--header-link-color);
+}
+footer{
+    margin-bottom: 100px;
 }
 
 
@@ -205,6 +208,10 @@ footer, footer a{
     header{
         margin: 20px 0;
     }
+    #logo-collection{
+        position: absolute;
+        margin: -30px 0 0 -140px
+    }
 }
 
 /* ===== Up tp PC ===== */
@@ -224,7 +231,7 @@ footer, footer a{
         flex-direction: row;
     }
     header .link-cta a{
-        font-size:25px;
+        font-size:27px;
     }
     #up-button {
         position: fixed;
@@ -239,8 +246,9 @@ footer, footer a{
     }
 }
 /* ===== Mobile Only ==== */
-@media only screen and (max-width:549px){
+
+@media only screen and (max-width:400px){
     header .link-cta a{
-        font-size:30px;
+        font-size:23px;
     }
 }
