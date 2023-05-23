@@ -71,14 +71,14 @@ a {
     object-fit:cover;
     max-height:300px;
 }
+/* Could be done with it's own class, but I needed to an overhead
+control of what was affected in this case */
 .div-round-corner > div, .round-corner,
 .div-box-padding > div, .box-padding,
 .div-box-padding img, .box-padding img,
-.cta, .link-cta a, .img-round-corner img
-{
+.cta, .link-cta a, .img-round-corner img{
     border-radius: var(--border-radius);
 }
-
 
 /* ===== Universal flex functions ===== */
 .flex-column{
@@ -95,7 +95,7 @@ a {
     align-items: center;
     justify-content: center;
 }
-.flex-column.lazy-align-left{
+.lazy-align-left{
     align-items: baseline;
 }
 .lazy-align-top{
@@ -103,17 +103,11 @@ a {
     justify-content: baseline;
     align-items: baseline;
 }
-.pills-display a {
-    margin: .5rem;
-    flex-wrap: wrap;
-    white-space:nowrap;
-}
 .no-wrap{
     flex-wrap:nowrap;
 }
 
-/* Buttons and linkscolor:var(--cta-color);
-    background:var(--dark-background); */
+/* ===== Buttons and links ===== */
 .dark-cta, .link-dark-cta a {
     color:white;
     background:var(--dark-background);
@@ -128,6 +122,10 @@ a {
 .cta-block{
     display: block;
     margin:15px 40px 0 40px;
+}
+.pills-display a {
+    margin: .5rem;
+    white-space:nowrap;
 }
 
 /* ===== Header css ===== */
@@ -153,7 +151,9 @@ a {
 }
 #header-links{
     border-bottom: 1px solid white;
+    padding-bottom:4px;
 }
+
 /* ===== Footer css ===== */
 footer section{
     margin-left: 4rem;
@@ -165,29 +165,16 @@ footer{
     margin-bottom: 100px;
 }
 
-
 /* ===== Animations ===== */
 .opacity-entry{
     opacity: 0;
     animation: opacityEntry 1s ease-in-out forwards;
 }
 @keyframes opacityEntry {
-    0% {
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.7;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% {opacity: 0;}
+    50%{opacity: 0.7;}
+    100% {opacity: 1;}
 }
-
-#up-button {
-        position: fixed;
-        right: 50px;
-        bottom: 40px;
-    }
 
 /* ===== Pc screen ==== */
 @media only screen and (min-width:1000px){
@@ -201,7 +188,11 @@ footer{
     header .link-cta a{
         font-size:32px;
     }
+    .link-hover-cta a:hover{
+        background-color: var(--dark-background);
+    }
     #up-button {
+        position: fixed;
         right:calc(50vw - (var(--page-max-width) * 0.55));
     }
     
@@ -212,15 +203,17 @@ footer{
         position: absolute;
         margin: -30px 0 0 -140px
     }
+    .hide-pc{
+        display:none;
+    }
 }
 
 /* ===== Up tp PC ===== */
 @media only screen and (max-width: 999px){
     :root{
         --page-max-width:90vw;
-        --intro-image-width: 120px;
+        --intro-image-width: 140px;
     }
-    
     .link-hover-cta a:active{
         background-color: var(--dark-background);
     }
@@ -233,18 +226,8 @@ footer{
     header .link-cta a{
         font-size:27px;
     }
-    #up-button {
-        position: fixed;
-        right: 50px;
-        bottom: 40px;
-    }
 }
-/* ===== Mobile and Up ===== */
-@media only screen and (min-width:550px){
-    .link-hover-cta a:hover{
-        background-color: var(--dark-background);
-    }
-}
+
 /* ===== Mobile Only ==== */
 
 @media only screen and (max-width:400px){
